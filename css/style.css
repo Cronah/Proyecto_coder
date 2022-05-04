@@ -1,0 +1,132 @@
+/*FULL RESPOSNSIVE*/
+
+
+
+/*lista NAV*/
+.list-nav a {
+    list-style-type: none;
+    margin: 10px;
+    padding: 14px 16px;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    color: white;
+    text-decoration: none;   
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: white;
+    border-left-color: white;
+}
+
+.body {
+    background-color: black;
+}
+
+/*Lista LI*/
+.list-nav li {
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+/*IMAGENES*/
+.images-1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6 , 1fr);
+}
+.images-1 img{
+    border-style: solid;
+    border-radius: 1%;
+    border-color: white;
+    margin-right: 2%;
+    width: 187px;
+    height: 265px;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: inline;
+}
+
+.images-container{
+    border: solid 4px red;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 4%;
+    grid-row-gap: 4%;
+}
+.grid-item1{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-item1 img{
+    width: 100%;
+    height: 100%;
+    border: solid red;
+}
+
+.grid-item img{
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+}
+.images-recommended{
+    display: grid;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 4%;
+    grid-row-gap: 4%;
+
+}
+
+
+
+h2 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 60px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: white;
+}
+h3 {
+color: white;
+}
+
+/*Footer*/
+footer h3 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+  }
+  @media only screen and (max-width: 768px) {
+          [class*="col-"] {
+      width: 100%;
+    }
+      }
+
+
